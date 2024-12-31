@@ -21,7 +21,7 @@ const theme = createTheme({
     colorScheme,
   },
   primaryColor: "colorScheme",
-  primaryShade: 5,
+  primaryShade: 9,
 });
 
 export const metadata: Metadata = {
@@ -37,10 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="dark"/>
       </head>
       <body>
-        <MantineProvider theme={theme}>
+        <MantineProvider defaultColorScheme="dark" theme={theme}>
           {children}
         </MantineProvider>
       </body>
