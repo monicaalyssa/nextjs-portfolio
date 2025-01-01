@@ -1,6 +1,8 @@
 import { Flex, FloatingIndicator, UnstyledButton } from "@mantine/core";
 import { useState } from "react";
 import classes from "./tabs.module.css";
+import Education from "./education";
+import Work from "./work";
 
 const data = ["Education", "Work"];
 
@@ -26,9 +28,12 @@ export default function Tabs() {
     </UnstyledButton>
   ));
   return (
+    <>
     <Flex mt="xl" className={classes.root} ref={setRootRef}>
       {controls}
       <FloatingIndicator className={classes.indicator} target={controlsRefs[active]} parent={rootRef} />
     </Flex>
+    {active === 0 ? (<Education />) : (<Work />)}
+    </>
   );
 }
