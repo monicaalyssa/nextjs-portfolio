@@ -18,19 +18,19 @@ export default function SocialLinks() {
       </Button>
 
       <Flex gap="xs" align="center">
-        <ActionIcon title="View my GitHub" component="a" href="#" variant="transparent">
+        <ActionIcon target="_blank" title="View my GitHub" component="a" href="https://github.com/monicaalyssa" variant="transparent">
             <GitHubIcon />
         </ActionIcon>
 
-        <ActionIcon title="View my LinkedIn profile" component="a" href="#" variant="transparent">
+        <ActionIcon target="_blank" title="View my LinkedIn profile" component="a" href="https://www.linkedin.com/in/monica-alyssa/" variant="transparent">
             <LinkedInIcon />
         </ActionIcon>
 
-        <ActionIcon title="View my Medium blog" component="a" href="#" variant="transparent">
+        <ActionIcon target="_blank" title="View my Medium blog" component="a" href="https://medium.com/@monicaalyssa" variant="transparent">
             <MediumIcon />
         </ActionIcon>
 
-        <ActionIcon title="Contact me via email" component="a" href="#"variant="transparent">
+        <ActionIcon title="Contact me via email" component="a" href="mailto:monicaalyssa.tech@gmail.com"variant="transparent">
             <MailIcon />
         </ActionIcon>
       </Flex>
