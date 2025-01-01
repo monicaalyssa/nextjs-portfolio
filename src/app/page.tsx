@@ -1,10 +1,24 @@
 "use client"
-import { Anchor, Avatar, Flex, Text, Title, useMantineColorScheme } from "@mantine/core";
+import { Anchor, Avatar, Container, Flex, Text, Title, useMantineColorScheme } from "@mantine/core";
 import PortraitImg from "../../public/Portrait.jpg"
 import classes from "./page.module.css"
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const theme = useMantineColorScheme();
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+      setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+    <Container>
+      <Flex h="80vh" align="center" justify="center">
+      </Flex>
+    </Container>
+  )}
 
   return (
     <>

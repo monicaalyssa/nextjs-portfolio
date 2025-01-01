@@ -33,7 +33,7 @@ export default function Navigation() {
         <Button variant="default" onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')}>Toggle</Button>
         <Flex align="center" gap="xs">
             {links.map((link, key) => (
-                <Anchor c="var(--text-color)" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
+                <Anchor size="sm" c="var(--text-color)" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
             ))}
         </Flex>
         </Flex>
