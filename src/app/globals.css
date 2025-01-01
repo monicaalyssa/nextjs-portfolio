@@ -16,9 +16,14 @@ body {
   color: var(--text-color) !important;
 }
 
-.nav:hover {
+:root[data-mantine-color-scheme="dark"] .nav:hover {
   color: white !important;
 }
+
+:root[data-mantine-color-scheme="light"] .nav:hover {
+  opacity: 0.7 !important;
+}
+
 
 body {
   background: var(--mantine-color-body); 
