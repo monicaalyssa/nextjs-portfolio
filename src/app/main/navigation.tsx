@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 export default function Navigation() {
     const { setColorScheme } = useMantineColorScheme();
-    const theme = useMantineColorScheme();
     const computedColorScheme = useComputedColorScheme('dark', { getInitialValueInEffect: true });
     const [mounted, setMounted] = useState(false)
 
@@ -43,8 +42,8 @@ export default function Navigation() {
     return (
         <>
         <Flex justify="space-between" align="center" my="xs">
-        <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} variant="default">
-            {computedColorScheme === 'dark' ? <IconSun size={18}></IconSun> : <IconMoonStars size={18}></IconMoonStars>}
+        <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} variant="transparent">
+            {computedColorScheme === 'dark' ? <IconSun color="#fcc419" size={18}></IconSun> : <IconMoonStars color="#364fc7" size={18}></IconMoonStars>}
         </ActionIcon>
         <Flex align="center" gap="xs">
             {links.map((link, key) => (
