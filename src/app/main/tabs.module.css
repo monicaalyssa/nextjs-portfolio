@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+  width: 100%;
+  border-radius: var(--mantine-radius-md);
+  padding: 5px;
+  border: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
+}
+
+.control {
+  padding: 9px 16px;
+  line-height: 1;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-2));
+  border-radius: var(--mantine-radius-md);
+  font-size: var(--mantine-font-size-sm);
+  transition: color 100ms ease;
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+}
+
+[data-mantine-color-scheme="dark"] .control[data-active] {
+    color: white !important;
+}
+
+[data-mantine-color-scheme="light"] .control[data-active] {
+    color: black !important;
+}
+
+.controlLabel {
+  position: relative;
+  z-index: 1;
+}
+
+[data-mantine-color-scheme="dark"] .indicator {
+    background-color: var(--mantine-color-default);
+}
+
+[data-mantine-color-scheme="light"] .indicator {
+    background-color: var(--mantine-color-gray-1);
+}
+
+.indicator {
+  border-radius: var(--mantine-radius-md);
+}
