@@ -28,6 +28,12 @@ body {
   margin-inline-start: 5px !important;
 }
 
+.arrowIcon {
+  margin-inline-end: 7px !important;
+  position: relative;
+  top: 0.1px
+}
+
 body {
   background: var(--mantine-color-body); 
   background-repeat: no-repeat; 
