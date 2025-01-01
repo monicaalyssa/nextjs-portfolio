@@ -1,2 +1,20 @@
+.devTitle {
+  background: linear-gradient(to right, #4263eb, #ae3ec9, #1098ad, #ced4da, #d6336c, #4263eb );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-animation 18s linear infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
 @media (max-width: 600px) {
 }
