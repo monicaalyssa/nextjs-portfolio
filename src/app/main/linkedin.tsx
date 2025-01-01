@@ -2,9 +2,10 @@ import { useMantineColorScheme } from "@mantine/core";
 
 export default function LinkedInIcon() {
   const theme = useMantineColorScheme();
-  
+
   return (
     <svg
+      aria-label="LinkedIn Logo"
       xmlns="http://www.w3.org/2000/svg"
       fill={theme.colorScheme === "dark" ? "#fff" : "#000"}
       x="0px"

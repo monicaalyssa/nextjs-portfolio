@@ -5,6 +5,6 @@ export default function MailIcon() {
     const theme = useMantineColorScheme();
     
     return (
-        <IconMail color={theme.colorScheme === "dark" ? "#fff" : "#000"} style={{ top: 2, position: "relative" }} size={23}></IconMail>
+        <IconMail aria-label="Mail Envelope Icon" color={theme.colorScheme === "dark" ? "#fff" : "#000"} style={{ top: 2, position: "relative" }} size={23}></IconMail>
     )
 }

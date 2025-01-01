@@ -5,6 +5,6 @@ export default function GitHubIcon() {
     const theme = useMantineColorScheme();
 
     return (
-        <IconBrandGithub color={theme.colorScheme === "dark" ? "#fff" : "#000"} style={{ top: 1, position: "relative" }} size={22} />
+        <IconBrandGithub aria-label="GitHub Logo" color={theme.colorScheme === "dark" ? "#fff" : "#000"} style={{ top: 1, position: "relative" }} size={22} />
     )
 }

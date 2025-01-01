@@ -47,7 +47,7 @@ export default function Navigation() {
                 <Anchor classNames={{root: 'nav'}} size="sm" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
             ))}
         </Flex>
-        <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} color="#c9c9c9" variant="subtle">
+        <ActionIcon title={computedColorScheme === 'dark' ? "Switch to light mode" : "Switch to dark mode"} aria-label={computedColorScheme === 'dark' ? "Switch to light mode" : "Switch to dark mode"} onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} color="#c9c9c9" variant="subtle">
             {computedColorScheme === 'dark' ? <IconSun color="#fcc419" size={18}></IconSun> : <IconMoonStars color="#364fc7" size={18}></IconMoonStars>}
         </ActionIcon>
         </Flex>

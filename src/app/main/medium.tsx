@@ -5,6 +5,7 @@ export default function MediumIcon() {
 
   return (
     <svg
+      aria-label="Medium Blog Logo"
       style={{ top: 2, position: "relative" }}
       fill={theme.colorScheme === "dark" ? "#fff" : "#000"}
       xmlns="http://www.w3.org/2000/svg"
