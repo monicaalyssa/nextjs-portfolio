@@ -14,7 +14,7 @@ const theme = createTheme({
     Anchor: {
       defaultProps: {
         underline: 'never',
-      }
+      },
     }
   }
 });

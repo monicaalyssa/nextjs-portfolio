@@ -10,23 +10,23 @@ export default function Navigation() {
 
     const links = [
         {
-            title: "Home",
+            title: "home",
             link: "/",
         },
         {
-            title: "Projects",
+            title: "projects",
             link: "/projects",
         },
         {
-            title: "About",
+            title: "about",
             link: "/about",
         },
         {
-            title: "Blog",
+            title: "blog",
             link: "/blog",
         },
         {
-            title: "Contact",
+            title: "contact",
             link: "/contact",
         },
     ]
@@ -42,14 +42,14 @@ export default function Navigation() {
     return (
         <>
         <Flex justify="space-between" align="center" my="xs">
-        <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} variant="transparent">
-            {computedColorScheme === 'dark' ? <IconSun color="#fcc419" size={18}></IconSun> : <IconMoonStars color="#364fc7" size={18}></IconMoonStars>}
-        </ActionIcon>
         <Flex align="center" gap="xs">
             {links.map((link, key) => (
-                <Anchor size="sm" c="var(--text-color)" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
+                <Anchor classNames={{root: 'nav'}} size="sm" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
             ))}
         </Flex>
+        <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} color="#c9c9c9" variant="subtle">
+            {computedColorScheme === 'dark' ? <IconSun color="#fcc419" size={18}></IconSun> : <IconMoonStars color="#364fc7" size={18}></IconMoonStars>}
+        </ActionIcon>
         </Flex>
         </>
     )
