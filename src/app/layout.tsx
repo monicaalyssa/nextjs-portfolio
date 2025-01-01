@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import '@mantine/core/styles.css';
-import { ColorSchemeScript, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
+import { ColorSchemeScript, Container, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
 
 const theme = createTheme({
   autoContrast: true,
@@ -26,10 +26,13 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript defaultColorScheme="dark"/>
         <link href="https://api.fontshare.com/v2/css?f[]=sentient@400,500,501,700,701&display=swap" rel="stylesheet"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, "/>
       </head>
       <body>
         <MantineProvider defaultColorScheme="dark" theme={theme}>
-          {children}
+          <Container>
+            {children}
+          </Container>
         </MantineProvider>
       </body>
     </html>
