@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, Container, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
+import Navigation from "./main/navigation";
 
 const theme = createTheme({
   autoContrast: true,
@@ -38,6 +39,8 @@ export default function RootLayout({
       <body>
         <MantineProvider defaultColorScheme="dark" theme={theme}>
           <Container>
+          <Navigation />
+
             {children}
           </Container>
         </MantineProvider>
