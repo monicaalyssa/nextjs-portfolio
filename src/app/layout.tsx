@@ -8,6 +8,13 @@ const theme = createTheme({
   headings: {
     fontFamily: "Sentient, serif;",
     fontWeight: "800",
+  },
+  components: {
+    Anchor: {
+      defaultProps: {
+        underline: 'never',
+      }
+    }
   }
 });
 
