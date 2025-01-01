@@ -8,7 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-
 :root[data-mantine-color-scheme="dark"] body {
   --mantine-color-body: radial-gradient(at 47% 31%, hsla(210, 0%, 12%, 1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(0, 0%, 25%, 0.32) 0px, transparent 50%), radial-gradient(at 1% 38%, hsla(0, 0%, 7%, 0.75) 0px, transparent 50%), radial-gradient(at 81% 63%, hsla(340, 0%, 12%, 1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(0, 0%, 23%, 0.55) 0px, transparent 50%);
 }
@@ -18,4 +17,10 @@ body {
   background-repeat: no-repeat; 
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (min-width: 48em) {
+  .container {
+    width: 730px;
+  }
 }

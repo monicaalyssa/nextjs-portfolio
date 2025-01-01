@@ -38,9 +38,8 @@ export default function RootLayout({
       </head>
       <body>
         <MantineProvider defaultColorScheme="dark" theme={theme}>
-          <Container>
+          <Container className="container">
           <Navigation />
-
             {children}
           </Container>
         </MantineProvider>
