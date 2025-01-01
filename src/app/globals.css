@@ -24,6 +24,9 @@ body {
   opacity: 0.7 !important;
 }
 
+.resumeIcon {
+  margin-inline-start: 5px !important;
+}
 
 body {
   background: var(--mantine-color-body); 
