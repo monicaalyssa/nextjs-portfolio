@@ -57,11 +57,9 @@ export default function Skills() {
       </Title>
       <Flex justify="center" my="lg" gap="lg">
         {logos.map((skill, index) => (
-          <>
-            <Tooltip  key={index} color={theme.colorScheme === "dark" ? "var(--mantine-color-default)" : ""} transitionProps={{ transition: 'pop', duration: 300 }} arrowSize={6} withArrow label={skill.alt}>
+            <Tooltip key={index} color={theme.colorScheme === "dark" ? "var(--mantine-color-default)" : ""} transitionProps={{ transition: 'pop', duration: 300 }} arrowSize={6} withArrow label={skill.alt}>
               <Image alt={skill.alt} aria-label={skill.alt} w={35} src={skill.src}></Image>
             </Tooltip>
-          </>
         ))}
       </Flex>
     </Box>

@@ -42,9 +42,9 @@ export default function Navigation() {
     return (
         <>
         <Flex justify="space-between" align="center" my="xs">
-        <Flex align="center" gap="xs">
+        <Flex align="center" gap="sm">
             {links.map((link, key) => (
-                <Anchor classNames={{root: 'nav'}} size="sm" p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
+                <Anchor classNames={{root: 'nav'}} size="sm" pl={0} p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>
             ))}
         </Flex>
         <ActionIcon title={computedColorScheme === 'dark' ? "Switch to light mode" : "Switch to dark mode"} aria-label={computedColorScheme === 'dark' ? "Switch to light mode" : "Switch to dark mode"} onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} color="#c9c9c9" variant="subtle">
