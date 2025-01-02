@@ -4,10 +4,12 @@ import LinkedInIcon from "./linkedin";
 import MediumIcon from "./medium";
 import GitHubIcon from "./github";
 import MailIcon from "./mail";
+import Link from "next/link";
 
 export default function SocialLinks() {
   return (
     <Flex align="center" gap="md" mt="xl">
+      <Link target="_blank" href="/Monica_Williams_Resume_Web_Developer.pdf">
       <Button
         title="Open resume (external link)"
         classNames={{ section: "resumeIcon" }}
@@ -16,6 +18,7 @@ export default function SocialLinks() {
       >
         Resume
       </Button>
+      </Link>
 
       <Flex gap="xs" align="center">
         <ActionIcon target="_blank" title="View my GitHub" component="a" href="https://github.com/monicaalyssa" variant="transparent">

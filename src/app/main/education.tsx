@@ -1,6 +1,8 @@
 import { Avatar, Button, List, ListItem, Text, Timeline } from "@mantine/core";
+import Link from "next/link";
 
 export default function Education() {
+
     return (
         <Timeline my="lg" color="var(--mantine-color-default)" active={1} bulletSize={50} lineWidth={2}>
             <Timeline.Item bullet={<Avatar size={51} 
@@ -15,8 +17,9 @@ export default function Education() {
                 <ListItem>Backend: Node.js, Express, REST APIs, OAuth, MongoDB, Firebase, PostgreSQL, JWT, AWS</ListItem>
                 <ListItem>Testing: Jest, Test-Driven Development, Puppeteer, Cucumber</ListItem>
             </List>
-
+            <Link target="_blank" href="/Certificate.pdf">
             <Button aria-label="View CareerFoundry Certificate" variant="default" size="compact-xs">View Certificate</Button>
+            </Link>
             </Timeline.Item>
         </Timeline>
     )
