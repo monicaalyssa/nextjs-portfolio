@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Title, Tooltip, useMantineColorScheme } from "@mantine/core";
+import { Flex, Image, Paper, Text, Title, useMantineColorScheme } from "@mantine/core";
 
 export default function Skills() {
   const theme = useMantineColorScheme();
@@ -51,17 +51,20 @@ export default function Skills() {
   ];
 
   return (
-    <Box my="xl">
+    <Paper bg={theme.colorScheme === "dark" ? "var(--mantine-color-dark-8)" : "white"} 
+    radius="md" style={{border: theme.colorScheme === "dark" ? "1px solid var(--mantine-color-default)" : "1px solid var(--mantine-color-gray-2)", boxShadow: "inset 0px 0px 35px -5px rgba(201, 201, 201, 0.1)"}} p="xl" my="xl">
       <Title ta="center" c={theme.colorScheme === "dark" ? "white" : "black"} order={3}>
         Skills
       </Title>
-      <Flex justify="center" my="lg" gap="lg">
+      <Flex px="15%" wrap="wrap" justify="center" my="lg" gap="lg">
         {logos.map((skill, index) => (
-            <Tooltip key={index} color={theme.colorScheme === "dark" ? "var(--mantine-color-default)" : ""} transitionProps={{ transition: 'pop', duration: 300 }} arrowSize={6} withArrow label={skill.alt}>
+            // <Tooltip key={index} color={theme.colorScheme === "dark" ? "var(--mantine-color-default)" : ""} transitionProps={{ transition: 'pop', duration: 300 }} arrowSize={6} withArrow label={skill.alt}>
+              <Flex my={7} key={index} gap={8} direction="column" align="center" justify="center">
               <Image alt={skill.alt} aria-label={skill.alt} w={35} src={skill.src}></Image>
-            </Tooltip>
+              <Text size="xs">{skill.alt}</Text>
+              </Flex>
         ))}
       </Flex>
-    </Box>
+    </Paper>
   );
 }
