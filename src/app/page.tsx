@@ -7,6 +7,7 @@ import SocialLinks from "./main/socials";
 import Tabs from "./main/tabs";
 import Skills from "./main/skills";
 import Projects from "./main/projects";
+import Blogs from "./main/blogs";
 
 export default function Home() {
   const theme = useMantineColorScheme();
@@ -41,6 +42,8 @@ export default function Home() {
       <Divider  />
       {/* <Skills /> */}
       <Projects />
+      <Divider />
+      <Blogs />
       <Divider />
       </Box>
     </>

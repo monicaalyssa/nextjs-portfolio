@@ -87,7 +87,7 @@ export default function Projects() {
                 <Flex gap={9} align="center">
                   {project.favicon ? <Image alt="" w={25} src={project.favicon}></Image> : null}
 
-                  <Text size="md" fz="lg" fw={600}>
+                  <Text fz="lg" fw={600}>
                     {project.name}
                   </Text>
                 </Flex>
