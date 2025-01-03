@@ -34,6 +34,22 @@ body {
   top: 0.1px
 }
 
+.rightArrowIcon {
+  margin-inline-start: 5px !important;
+  position: relative;
+  top: 0.3px
+}
+
+.rightGitHub {
+  position: relative;
+  top: 0.5px;
+  margin-inline-start: 5px !important;
+}
+
+.rightWWW {
+  margin-inline-start: 5px !important;
+}
+
 .listWrapper {
   width: 91%;
 }
