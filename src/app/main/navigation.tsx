@@ -18,10 +18,6 @@ export default function Navigation() {
             link: "/projects",
         },
         {
-            title: "about",
-            link: "/about",
-        },
-        {
             title: "blog",
             link: "/blog",
         },

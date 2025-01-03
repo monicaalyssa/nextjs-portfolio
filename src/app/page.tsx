@@ -1,5 +1,5 @@
 "use client"
-import { Anchor, Avatar, Box, Container, Divider, Flex, Text, Title, useMantineColorScheme } from "@mantine/core";
+import { Anchor, Avatar, Container, Divider, Flex, Text, Title, useMantineColorScheme } from "@mantine/core";
 import PortraitImg from "../../public/Portrait.jpg"
 import classes from "./page.module.css"
 import { useEffect, useState } from "react";
@@ -28,7 +28,6 @@ export default function Home() {
 
   return (
     <>
-      <Box my="xl">
       <Flex align="center" gap="md">
       <Avatar component="a" target="_blank" href="https://www.linkedin.com/in/monica-alyssa/" size={60} src={PortraitImg.src} alt="Portrait of Monica Williams"></Avatar>
       <Flex direction="column" gap={0}>
@@ -49,7 +48,6 @@ export default function Home() {
       <Blogs />
       <Divider />
       <Footer />
-      </Box>
     </>
   );
 }

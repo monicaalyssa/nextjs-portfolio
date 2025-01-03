@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import '@mantine/core/styles.css';
-import { ColorSchemeScript, Container, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
+import { Box, ColorSchemeScript, Container, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
 import Navigation from "./main/navigation";
 
 const theme = createTheme({
@@ -40,7 +40,9 @@ export default function RootLayout({
         <MantineProvider defaultColorScheme="dark" theme={theme}>
           <Container className="container">
           <Navigation />
+          <Box my="xl">
             {children}
+          </Box>
           </Container>
         </MantineProvider>
       </body>

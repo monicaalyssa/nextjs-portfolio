@@ -9,7 +9,7 @@ export default function Projects() {
   const theme = useMantineColorScheme();
 
   return (
-    <Group py="xs" my="xl">
+    <Group my="xl">
     <Flex w="100%" justify="space-between">
        
     <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>Featured Projects</Title>
