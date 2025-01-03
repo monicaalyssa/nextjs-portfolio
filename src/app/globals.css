@@ -40,6 +40,14 @@ body {
   top: 0.3px
 }
 
+.hover:hover {
+  scale: 1.02
+}
+
+.hover { 
+  transition: scale 0.3s ease-in-out;
+}
+
 .rightGitHub {
   position: relative;
   top: 0.5px;
