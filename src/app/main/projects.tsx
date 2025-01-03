@@ -18,7 +18,7 @@ export default function Projects() {
     
     </Flex>
     <Grid py="sm">
-      {projects.map((project, index) => (
+      {projects.slice(0, 4).map((project, index) => (
         <Grid.Col key={index} span={6}>
           <Flex direction="column" p={0} align="flex-start">
             <div>
