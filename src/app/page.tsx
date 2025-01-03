@@ -41,8 +41,10 @@ export default function Home() {
       <SocialLinks></SocialLinks>
       <Tabs />
       <Divider  />
-      {/* <Skills /> */}
+      
       <Projects />
+      <Divider />
+      <Skills />
       <Divider />
       <Blogs />
       <Divider />

@@ -50,13 +50,17 @@ export default function Skills() {
     }
   ];
 
+//   <Paper bg={theme.colorScheme === "dark" ? "var(--mantine-color-dark-8)" : "white"} 
+//   radius="md" style={{border: theme.colorScheme === "dark" ? "1px solid var(--mantine-color-default)" : "1px solid var(--mantine-color-gray-2)", boxShadow: "inset 0px 0px 35px -5px rgba(201, 201, 201, 0.1)"}} p="xl" my="xl">
+//     <Title ta="center" c={theme.colorScheme === "dark" ? "white" : "black"} order={3}>
+//       Skills
+//     </Title>
+//     <Flex px="15%" wrap="wrap" justify="center" my="lg" gap="lg">
+//     </Flex>
+//   </Paper>
+
   return (
-    <Paper bg={theme.colorScheme === "dark" ? "var(--mantine-color-dark-8)" : "white"} 
-    radius="md" style={{border: theme.colorScheme === "dark" ? "1px solid var(--mantine-color-default)" : "1px solid var(--mantine-color-gray-2)", boxShadow: "inset 0px 0px 35px -5px rgba(201, 201, 201, 0.1)"}} p="xl" my="xl">
-      <Title ta="center" c={theme.colorScheme === "dark" ? "white" : "black"} order={3}>
-        Skills
-      </Title>
-      <Flex px="15%" wrap="wrap" justify="center" my="lg" gap="lg">
+      <Flex wrap="wrap" justify="center" my="lg" gap="lg">
         {logos.map((skill, index) => (
             // <Tooltip key={index} color={theme.colorScheme === "dark" ? "var(--mantine-color-default)" : ""} transitionProps={{ transition: 'pop', duration: 300 }} arrowSize={6} withArrow label={skill.alt}>
               <Flex my={7} key={index} gap={8} direction="column" align="center" justify="center">
@@ -65,6 +69,6 @@ export default function Skills() {
               </Flex>
         ))}
       </Flex>
-    </Paper>
+
   );
 }
