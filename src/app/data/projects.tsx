@@ -43,6 +43,7 @@ export const projects = [
       },
       {
         name: "Mingo: Messaging & Chat",
+        favicon: "/chat.png",
         description: "",
         description2: "Chat with your friends on iOS or Android devices, and easily share images or your location",
         img: "https://placehold.co/200x100",
@@ -53,6 +54,7 @@ export const projects = [
       },
       {
         name: "Scripture Support",
+        favicon: "https://raw.githubusercontent.com/monicaalyssa/scripture-support/refs/heads/main/public/favicon.png",
         description: "",
         description2: "Receive a personalized Bible verse based on your current feelings from the input box, to encourage and uplift you.",
         img: "https://placehold.co/200x100",

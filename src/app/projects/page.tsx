@@ -8,8 +8,16 @@ import Footer from "../main/footer";
 
 export default function Projects() {
   const theme = useMantineColorScheme();
-
   const [mounted, setMounted] = useState(false);
+
+  const reorderedProjects = [
+    projects[0], 
+    projects[2],
+    projects[4],
+    projects[5],
+    projects[1],
+    projects[3],
+  ];
 
   useEffect(() => {
     setMounted(true);
@@ -24,7 +32,7 @@ export default function Projects() {
         Projects
       </Title>
       <Flex gap="lg" direction="column" my="xl">
-        {projects.map((project, index) => (
+        {reorderedProjects.map((project, index) => (
           <Flex
             style={{
               border: "1px solid var(--mantine-color-dark-6)",
