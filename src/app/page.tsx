@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-      <Box pt="lg" my="xl">
+      <Box my="xl">
       <Flex align="center" gap="md">
       <Avatar component="a" target="_blank" href="https://www.linkedin.com/in/monica-alyssa/" size={60} src={PortraitImg.src} alt="Portrait of Monica Williams"></Avatar>
       <Flex direction="column" gap={0}>

@@ -2,6 +2,7 @@ import { ActionIcon, Button, Flex } from "@mantine/core";
 import { IconFileSymlink } from "@tabler/icons-react";
 import Link from "next/link";
 import { socialLinks } from "../data/socialLinks";
+import classes from "../icons/icon.module.css"
 
 export default function SocialLinks() {
   return (
@@ -19,7 +20,7 @@ export default function SocialLinks() {
 
       <Flex gap="xs" align="center">
       {socialLinks.map((link, index) => (
-          <ActionIcon key={index} title={link.title} target="_blank" component="a" href={link.href} variant="transparent">
+          <ActionIcon classNames={{root: classes.actionHover}} key={index} title={link.title} target="_blank" component="a" href={link.href} variant="transparent">
             {link.icon}
           </ActionIcon>
       ))}

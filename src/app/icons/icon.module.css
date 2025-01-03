@@ -1,0 +1,22 @@
+.actionHover:hover .iconHoverFill {
+  fill: white;
+}
+
+.actionHover:hover .iconHoverColor {
+  color: white;
+}
+
+.iconHoverColor,
+.iconHoverFill {
+  transition: all 0.3s ease;
+}
+
+:root[data-mantine-color-scheme="light"] .actionHover:hover .iconHoverColor {
+  opacity: 0.5;
+  color: black;
+}
+
+:root[data-mantine-color-scheme="light"] .actionHover:hover .iconHoverFill {
+  opacity: 0.5;
+  fill: black;
+}

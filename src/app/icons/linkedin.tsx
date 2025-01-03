@@ -1,13 +1,15 @@
 import { useMantineColorScheme } from "@mantine/core";
+import classes from "./icon.module.css"
 
 export default function LinkedInIcon() {
   const theme = useMantineColorScheme();
 
   return (
     <svg
+      className={classes.iconHoverFill}
       aria-label="LinkedIn Logo"
       xmlns="http://www.w3.org/2000/svg"
-      fill={theme.colorScheme === "dark" ? "#fff" : "#000"}
+      fill={theme.colorScheme === "dark" ? "var(--mantine-color-dark-3)" : "#000"}
       x="0px"
       y="0px"
       width="21"

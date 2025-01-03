@@ -1,4 +1,5 @@
 import { useMantineColorScheme } from "@mantine/core";
+import classes from "./icon.module.css"
 
 export default function MediumIcon() {
   const theme = useMantineColorScheme();
@@ -6,8 +7,9 @@ export default function MediumIcon() {
   return (
     <svg
       aria-label="Medium Blog Logo"
+      className={classes.iconHoverFill}
       style={{ top: 2, position: "relative" }}
-      fill={theme.colorScheme === "dark" ? "#fff" : "#000"}
+      fill={theme.colorScheme === "dark" ? "var(--mantine-color-dark-3)" : "#000"}
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
