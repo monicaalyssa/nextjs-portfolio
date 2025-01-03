@@ -1,10 +1,7 @@
 import { ActionIcon, Button, Flex } from "@mantine/core";
 import { IconFileSymlink } from "@tabler/icons-react";
-import LinkedInIcon from "./linkedin";
-import MediumIcon from "./medium";
-import GitHubIcon from "./github";
-import MailIcon from "./mail";
 import Link from "next/link";
+import { socialLinks } from "../data/socialLinks";
 
 export default function SocialLinks() {
   return (
@@ -21,21 +18,11 @@ export default function SocialLinks() {
       </Link>
 
       <Flex gap="xs" align="center">
-        <ActionIcon target="_blank" title="View my GitHub" component="a" href="https://github.com/monicaalyssa" variant="transparent">
-            <GitHubIcon />
-        </ActionIcon>
-
-        <ActionIcon target="_blank" title="View my LinkedIn profile" component="a" href="https://www.linkedin.com/in/monica-alyssa/" variant="transparent">
-            <LinkedInIcon />
-        </ActionIcon>
-
-        <ActionIcon target="_blank" title="View my Medium blog" component="a" href="https://medium.com/@monicaalyssa" variant="transparent">
-            <MediumIcon />
-        </ActionIcon>
-
-        <ActionIcon title="Contact me via email" component="a" href="mailto:monicaalyssa.tech@gmail.com"variant="transparent">
-            <MailIcon />
-        </ActionIcon>
+      {socialLinks.map((link, index) => (
+          <ActionIcon key={index} title={link.title} target="_blank" component="a" href={link.href} variant="transparent">
+            {link.icon}
+          </ActionIcon>
+      ))}
       </Flex>
     </Flex>
   );
