@@ -20,7 +20,7 @@ const theme = createTheme({
 });
 
 export const metadata: Metadata = {
-  title: "Monica Williams",
+  title: "Monica Williams | Full-Stack Web Developer",
   description: "Portfolio",
 };
 
