@@ -8,6 +8,7 @@ import Tabs from "./main/tabs";
 import Skills from "./main/skills";
 import Projects from "./main/projects";
 import Blogs from "./main/blogs";
+import Footer from "./main/footer";
 
 export default function Home() {
   const theme = useMantineColorScheme();
@@ -27,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-      <Box py="lg" my="xl">
+      <Box pt="lg" my="xl">
       <Flex align="center" gap="md">
       <Avatar component="a" target="_blank" href="https://www.linkedin.com/in/monica-alyssa/" size={60} src={PortraitImg.src} alt="Portrait of Monica Williams"></Avatar>
       <Flex direction="column" gap={0}>
@@ -45,6 +46,7 @@ export default function Home() {
       <Divider />
       <Blogs />
       <Divider />
+      <Footer />
       </Box>
     </>
   );

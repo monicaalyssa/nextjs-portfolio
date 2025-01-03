@@ -40,7 +40,6 @@ export default function Blogs() {
           {blogs.map((blog, index) => (
             <Text component="a" title={blog.title ? `Read "${blog.title}"` : ""} key={index} href={blog.link} target="_blank" className="hover">
               <Flex
-                component="a"
                 p="lg"
                 style={{
                   border: "1px solid var(--mantine-color-dark-6)",
