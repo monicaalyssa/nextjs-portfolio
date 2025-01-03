@@ -38,7 +38,7 @@ export default function Blogs() {
 
         <Flex w="100%" direction="column">
           {blogs.map((blog, index) => (
-            <Text component="a" key={index} href={blog.link} target="_blank" className="hover">
+            <Text component="a" title={blog.title ? `Read "${blog.title}"` : ""} key={index} href={blog.link} target="_blank" className="hover">
               <Flex
                 component="a"
                 p="lg"
