@@ -46,7 +46,6 @@ export default function Projects() {
             p={0}
           >
 
-
             <Flex p="lg" gap="lg" direction="row">
             <Image
                 alt="test"
