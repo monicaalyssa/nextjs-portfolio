@@ -1,7 +1,6 @@
-import { Flex, Image, Paper, Text, Title, useMantineColorScheme } from "@mantine/core";
+import { Flex, Image, Text } from "@mantine/core";
 
 export default function Skills() {
-  const theme = useMantineColorScheme();
 
   const logos = [
     {
