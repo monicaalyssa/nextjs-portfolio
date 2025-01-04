@@ -14,7 +14,11 @@ export default function Projects() {
        
     <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>Featured Projects</Title>
   
-    <Button mt="-4px" p={0} size="sm" variant="transparent" c={theme.colorScheme === "dark" ? "var(--mantine-text-color)" : "black"} classNames={{ section: "rightArrowIcon" }} rightSection={<IconArrowRight size={17} />}>View More Projects</Button>
+    <Button mt="-4px" p={0} size="sm" 
+    component="a" href="/projects" variant="transparent" 
+    c={theme.colorScheme === "dark" ? "var(--mantine-text-color)" : "black"} 
+    classNames={{ section: "rightArrowIcon" }} rightSection={<IconArrowRight size={17} />}>
+    View More Projects</Button>
     
     </Flex>
     <Grid py="sm">
@@ -82,6 +86,9 @@ export default function Projects() {
                   <Button
                     c="var(--mantine-text-color)"
                     variant="default"
+                    component="a"
+                    target="_blank"
+                    href={project.sourceCode}
                     size="compact-xs"
                     classNames={{ section: "rightGitHub" }}
                     rightSection={<IconBrandGithub size={12} />}
@@ -95,6 +102,9 @@ export default function Projects() {
                     c="var(--mantine-text-color)"
                     variant="default"
                     size="compact-xs"
+                    component="a"
+                    target="_blank"
+                    href={project.liveSite}
                     classNames={{ section: "rightWWW" }}
                     rightSection={<IconWorldWww size={12} />}
                   >

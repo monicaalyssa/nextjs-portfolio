@@ -23,7 +23,7 @@ export const projects = [
       techStack2: ["JavaScript", "PokeAPI", "Bootstrap"],
     },
     {
-      name: "Mortgage Lender",
+      name: "Local Mortgage Lender",
       description:
         "A local mortgage lender that offers various loan options and attracts potential leads and partners through interactive tools and resources.",
       description2: "Get information on various mortgage loan options, use mortgage calculators, and find the resources you need to make informed decisions.",
@@ -31,6 +31,17 @@ export const projects = [
       techStack: ["React", "Mantine", "Vite"],
       techStack2: ["React", "TypeScript", "Vite", "Mantine"],
     },
+    {
+        name: "Mingo: Messaging & Chat",
+        favicon: "/chat.png",
+        description: "A React Native application that allows users to chat with their friends, share images and their location on iOS and Android.",
+        description2: "Chat with your friends on iOS or Android devices, and easily share images or your location.",
+        img: "/mingo.png",
+        sourceCode: "https://github.com/monicaalyssa/mingo",
+        liveSite: "",
+        techStack: ["React Native", "Firebase", "Gifted Chat UI"],
+        techStack2: ["React Native", "Firebase", "Gifted Chat UI"],
+      },
     {
         name: "Meet",
         description: "Meet is a Progressive Web App (PWA) with offline functionality that allows users to search for upcoming events near their city. It includes interactive charts to visualize key event data.",
@@ -40,17 +51,6 @@ export const projects = [
         liveSite: "https://monicaalyssa.github.io/meet/",
         techStack: ["React", "AWS", "OAuth (Open Authorization)"],
         techStack2: ["React", "Jest", "RESTful API", "AWS Lambda", "OAuth"],
-      },
-      {
-        name: "Mingo: Messaging & Chat",
-        favicon: "/chat.png",
-        description: "",
-        description2: "Chat with your friends on iOS or Android devices, and easily share images or your location",
-        img: "/mingo.png",
-        sourceCode: "https://github.com/monicaalyssa/mingo",
-        liveSite: "",
-        techStack: [""],
-        techStack2: ["React Native", "Firebase", "Gifted Chat UI"],
       },
       {
         name: "Scripture Support",

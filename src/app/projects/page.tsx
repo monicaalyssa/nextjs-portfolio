@@ -13,10 +13,10 @@ export default function Projects() {
   const reorderedProjects = [
     projects[0], 
     projects[2],
-    projects[4],
+    projects[3],
     projects[5],
     projects[1],
-    projects[3],
+    projects[4],
   ];
 
   useEffect(() => {
@@ -87,6 +87,9 @@ export default function Projects() {
               <Flex direction="row" gap="xs" mt="md" align="flex-start">
                 {project.sourceCode ? (
                   <Button
+                    component="a"
+                    target="_blank"
+                    href={project.sourceCode}
                     c="var(--mantine-text-color)"
                     variant="default"
                     size="compact-xs"
@@ -102,6 +105,9 @@ export default function Projects() {
                     c="var(--mantine-text-color)"
                     variant="default"
                     size="compact-xs"
+                    component="a"
+                    target="_blank"
+                    href={project.liveSite}
                     classNames={{ section: "rightWWW" }}
                     rightSection={<IconWorldWww size={12} />}
                   >
