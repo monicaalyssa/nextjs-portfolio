@@ -31,11 +31,12 @@ export default function Projects() {
       <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>
         Projects
       </Title>
+      <Text mt={3}>All projects were designed and developed by me.</Text>
       <Flex gap="lg" direction="column" my="xl">
         {reorderedProjects.map((project, index) => (
           <Flex
             style={{
-              border: "1px solid var(--mantine-color-dark-6)",
+              border: `1px solid ${theme.colorScheme === "dark" ? "var(--mantine-color-dark-6)" : "#dee2e6"}`,
               borderRadius: "var(--mantine-radius-default)",
               overflow: "hidden",
               height: "181.289px",

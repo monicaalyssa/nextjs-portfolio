@@ -42,9 +42,9 @@ export default function Projects() {
               p="lg"
               pt="sm"
               style={{
-                border: "1px solid var(--mantine-color-dark-6)",
+                border: `1px solid ${theme.colorScheme === "dark" ? "var(--mantine-color-dark-6)" : "#dee2e6"}`,
                 borderRadius: "var(--mantine-radius-default)",
-                borderTop: "none",
+                borderTop: "0",
                 borderTopLeftRadius: "0",
                 borderTopRightRadius: "0",
                 height: "211.883px"
