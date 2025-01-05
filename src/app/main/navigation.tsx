@@ -37,7 +37,7 @@ export default function Navigation() {
 
     return (
         <>
-        <Flex justify="space-between" align="center" my="xs">
+        <Flex wrap="wrap" direction="row" justify="space-between" align="center" my="xs">
         <Flex align="center" gap="sm">
             {links.map((link, key) => (
                 <Anchor classNames={{root: 'nav'}} size="sm" pl={0} p="sm" fw={500} href={link.link} key={key}>{link.title}</Anchor>

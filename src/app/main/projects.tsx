@@ -8,15 +8,17 @@ export default function Projects() {
   // whole button will link to separate page, but inside will have 2 buttons
 
   const breakpoint = useMediaQuery(`(min-width: 48em)`)
+  const breakpointXS = useMediaQuery(`(min-width: 36em)`)
   const theme = useMantineColorScheme();
 
   return (
     <Group my="xl">
-    <Flex w="100%" justify="space-between">
+    <Flex w="100%" direction={breakpointXS ? "row" : "column"} justify="space-between">
        
     <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>Featured Projects</Title>
   
-    <Button mt="-4px" p={0} size="sm" 
+    <Button mt="-4px" p={0} size="sm"
+    justify="left" 
     component="a" href="/projects" variant="transparent" 
     c={theme.colorScheme === "dark" ? "var(--mantine-text-color)" : "black"} 
     classNames={{ section: "rightArrowIcon" }} rightSection={<IconArrowRight size={17} />}>
@@ -27,13 +29,15 @@ export default function Projects() {
       {projects.slice(0, 4).map((project, index) => (
         <Grid.Col key={index} span={{ base: 12, sm: 6 }}>
           <Flex direction="column" p={0} align="flex-start">
-            <div>
+            <div style={{width: "100%"}}>
               <Image
                 alt="test"
                 style={{
                   borderRadius: "var(--mantine-radius-default)",
                   borderBottomLeftRadius: "0",
                   borderBottomRightRadius: "0",
+                  width: "100%",
+                  maxWidth: "100%"
                 }}
                 src={project.img}
               ></Image>
@@ -67,6 +71,7 @@ export default function Projects() {
                     key={index}
                     px={10}
                     py={2}
+                    wrap="wrap"
                     style={{ borderRadius: 100, backgroundColor: "rgba(16, 152, 173, 0.1)" }}
                     align="center"
                     justify="center"
