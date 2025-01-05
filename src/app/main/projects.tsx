@@ -1,11 +1,13 @@
 import { Text, Image, Grid, Button, Flex, useMantineColorScheme, Title, Group } from "@mantine/core";
 import { IconArrowRight, IconBrandGithub, IconWorldWww } from "@tabler/icons-react";
 import { projects } from "../data/projects";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function Projects() {
   // dim hover & scale
   // whole button will link to separate page, but inside will have 2 buttons
 
+  const breakpoint = useMediaQuery(`(min-width: 48em)`)
   const theme = useMantineColorScheme();
 
   return (
@@ -23,7 +25,7 @@ export default function Projects() {
     </Flex>
     <Grid py="sm">
       {projects.slice(0, 4).map((project, index) => (
-        <Grid.Col key={index} span={6}>
+        <Grid.Col key={index} span={{ base: 12, sm: 6 }}>
           <Flex direction="column" p={0} align="flex-start">
             <div>
               <Image
@@ -32,14 +34,13 @@ export default function Projects() {
                   borderRadius: "var(--mantine-radius-default)",
                   borderBottomLeftRadius: "0",
                   borderBottomRightRadius: "0",
-                  height: "200px",
-                  maxHeight: "200px"
                 }}
                 src={project.img}
               ></Image>
             </div>
             <Flex
               p="lg"
+              
               pt="sm"
               style={{
                 border: `1px solid ${theme.colorScheme === "dark" ? "var(--mantine-color-dark-6)" : "#dee2e6"}`,
@@ -47,7 +48,7 @@ export default function Projects() {
                 borderTop: "0",
                 borderTopLeftRadius: "0",
                 borderTopRightRadius: "0",
-                height: "211.883px"
+                height: `${breakpoint ? "211.883px" : ""}`
               }}
               direction="column"
             >
@@ -77,8 +78,8 @@ export default function Projects() {
                 ))}
               </Flex>
               <Text style={{
-                height: "67.1875px",
-                maxHeight: "67.1875px",
+                
+                height: `${breakpoint ? "67.1875px" : ""}`,
               }} size="xs">{project.description}</Text>
 
               <Flex direction="row" gap="xs" mt="lg" align="flex-start">

@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import { projects } from "../data/projects";
 import { IconBrandGithub, IconWorldWww } from "@tabler/icons-react";
 import Footer from "../main/footer";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function Projects() {
   const theme = useMantineColorScheme();
   const [mounted, setMounted] = useState(false);
+  const breakpoint = useMediaQuery(`(min-width: 48em)`)
 
   const reorderedProjects = [
     projects[0], 
@@ -39,19 +41,21 @@ export default function Projects() {
               border: `1px solid ${theme.colorScheme === "dark" ? "var(--mantine-color-dark-6)" : "#dee2e6"}`,
               borderRadius: "var(--mantine-radius-default)",
               overflow: "hidden",
-              height: "181.289px",
-              maxHeight: "181.289px",
+              height: `${breakpoint ? "181.289px" : ""}`,
             }}
             direction="row"
+            
+            
             key={index}
             p={0}
           >
 
-            <Flex p="lg" gap="lg" direction="row">
+            <Flex p="lg" gap="lg" direction= {breakpoint ? "row" : "column"}>
             <Image
                 alt="test"
                 style={{
-                  width: "250px",
+                  width: `${breakpoint ? "250px" : "100%"}`,
+                  
                   height: "100%",
                   borderRadius: "var(--mantine-radius-default)",
                 }}
