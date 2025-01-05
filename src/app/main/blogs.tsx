@@ -1,9 +1,11 @@
 import { Button, Flex, Group, Text, Title, useMantineColorScheme } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { IconArrowRight } from "@tabler/icons-react";
 
 export default function Blogs() {
   const theme = useMantineColorScheme();
-
+  const breakpointXS = useMediaQuery(`(min-width: 36em)`)
+ 
   const blogs = [
     {
       title: "My Favorite VSCode Extensions",
@@ -18,7 +20,7 @@ export default function Blogs() {
   return (
     <>
       <Group py="xs" my="xl">
-        <Flex w="100%" justify="space-between">
+        <Flex w="100%" direction={breakpointXS ? "row" : "column"} justify="space-between">
           <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>
             Blogs
           </Title>
@@ -26,6 +28,7 @@ export default function Blogs() {
           <Button
             mt="-4px"
             p={0}
+            justify="left" 
             size="sm"
             variant="transparent"
             c={theme.colorScheme === "dark" ? "var(--mantine-text-color)" : "black"}
