@@ -16,8 +16,8 @@ export default function Projects() {
     projects[0], 
     projects[2],
     projects[3],
-    projects[5],
     projects[1],
+    projects[5],
     projects[4],
   ];
 
@@ -44,8 +44,6 @@ export default function Projects() {
               height: `${breakpoint ? "181.289px" : ""}`,
             }}
             direction="row"
-            
-            
             key={index}
             p={0}
           >
@@ -55,7 +53,6 @@ export default function Projects() {
                 alt="test"
                 style={{
                   width: `${breakpoint ? "250px" : "100%"}`,
-                  
                   height: "100%",
                   borderRadius: "var(--mantine-radius-default)",
                 }}
