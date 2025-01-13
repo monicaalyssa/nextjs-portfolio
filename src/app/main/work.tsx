@@ -11,8 +11,9 @@ export default function Work() {
             <Text mt="xs" size="sm"></Text>
             
             <List my="xs" size="sm">
-                <ListItem classNames={{itemWrapper: "listWrapper"}}>Design and develop a new, user-friendly, responsive company website with React, Vite, and TypeScript to better support the company&apos;s goals of expanding partnerships and attracting new talent.</ListItem>
+                <ListItem classNames={{itemWrapper: "listWrapper"}}>Design and develop a new, user-friendly, responsive company website with React, TypeScript, and Sanity CMS to better support the company&apos;s goals of expanding partnerships and attracting new talent.</ListItem>
                 <ListItem classNames={{itemWrapper: "listWrapper"}}>Create flyers for real estate agents to promote property listings and loan programs, strengthening realtor partnerships.</ListItem>
+                <ListItem classNames={{itemWrapper: "listWrapper"}}>Design presentations to target potential hires, partners, and new recruits.</ListItem>
             </List>
 
             </Timeline.Item>
