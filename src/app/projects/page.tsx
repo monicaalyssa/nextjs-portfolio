@@ -33,7 +33,7 @@ export default function Projects() {
       <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>
         Projects
       </Title>
-      <Text mt={3}>All projects were designed and developed by me.</Text>
+      <Text mt={5}>All projects were designed and developed by me.</Text>
       <Flex gap="lg" direction="column" my="xl">
         {reorderedProjects.map((project, index) => (
           <Flex

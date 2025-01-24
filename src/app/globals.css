@@ -28,6 +28,12 @@ body {
   margin-inline-start: 5px !important;
 }
 
+.sendIcon {
+  margin-inline-start: 8px !important;
+  position: relative;
+  top: 0.5px;
+}
+
 .arrowIcon {
   margin-inline-end: 7px !important;
   position: relative;
@@ -60,6 +66,10 @@ body {
 
 .listWrapper {
   width: 91%;
+}
+
+.contactLabel {
+  margin-bottom: 7px;
 }
 
 body {
