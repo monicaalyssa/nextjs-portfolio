@@ -25,7 +25,7 @@ export default function Blogs() {
             Blogs
           </Title>
 
-          <Button
+          {/* <Button
             mt="-4px"
             p={0}
             justify="left" 
@@ -36,7 +36,7 @@ export default function Blogs() {
             rightSection={<IconArrowRight size={17} />}
           >
             View More Blogs
-          </Button>
+          </Button> */}
         </Flex>
 
         <Flex w="100%" direction="column">

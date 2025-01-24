@@ -3,7 +3,7 @@ export const projects = [
       name: "PopcornPal",
       favicon: "/popcornpal-logo.png",
       description:
-        "PopcornPal is a full-stack web application that showcases detailed information about films and lets users create accounts and favorite films.",
+        "PopcornPal is a full-stack web application that showcases detailed information about movies and lets users create accounts and favorite films.",
       description2: "Explore a diverse collection of movies, learn about movie plots and directors, and register to manage your favorite movies.",
       img: "/popcornpal.png",
       sourceCode: "https://github.com/monicaalyssa/popcornpal-client",
@@ -48,7 +48,7 @@ export const projects = [
         description2: "Find events near your city and view event insights through interactive charts.",
         img: "/meet.png",
         sourceCode: "https://github.com/monicaalyssa/meet",
-        liveSite: "https://monicaalyssa.github.io/meet/",
+        liveSite: "",
         techStack: ["React", "AWS", "OAuth (Open Authorization)"],
         techStack2: ["React", "Jest", "RESTful API", "AWS Lambda", "OAuth"],
       },

@@ -17,10 +17,10 @@ export default function Navigation() {
             title: "projects",
             link: "/projects",
         },
-        {
-            title: "blog",
-            link: "/blog",
-        },
+        // {
+        //     title: "blog",
+        //     link: "/blog",
+        // },
         {
             title: "contact",
             link: "/contact",
