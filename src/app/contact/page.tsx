@@ -12,7 +12,7 @@ export default function Contact() {
 
   const sendEmail = async () => {
     try {
-      const response = await fetch("http://localhost:5050/send", {
+      const response = await fetch("https://monicaalyssa-140d2486faec.herokuapp.com/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
