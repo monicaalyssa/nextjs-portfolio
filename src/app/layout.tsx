@@ -35,6 +35,7 @@ export default function RootLayout({
         <ColorSchemeScript defaultColorScheme="dark"/>
         <link href="https://api.fontshare.com/v2/css?f[]=sentient@400,500,501,700,701&display=swap" rel="stylesheet"></link>
         <link rel="icon" href="/favicon.svg" />
+        <meta name="google-site-verification" content="qGpc5C1bVPFUAsBTYa4oO8qdw21v_5u-ifMK3K6ECWs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, "/>
       </head>
       <body>
