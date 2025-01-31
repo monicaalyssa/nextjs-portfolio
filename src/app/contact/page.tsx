@@ -4,7 +4,6 @@ import { Anchor, Button, Flex, Text, Textarea, TextInput, Title, useMantineColor
 import { useEffect, useState } from "react";
 import { IconSend } from "@tabler/icons-react";
 import Footer from "../main/footer";
-import MailIcon from "../icons/mail";
 
 export default function Contact() {
   const theme = useMantineColorScheme()

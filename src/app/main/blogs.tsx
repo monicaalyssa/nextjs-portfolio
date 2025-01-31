@@ -1,6 +1,5 @@
-import { Button, Flex, Group, Text, Title, useMantineColorScheme } from "@mantine/core";
+import { Flex, Group, Text, Title, useMantineColorScheme } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { IconArrowRight } from "@tabler/icons-react";
 
 export default function Blogs() {
   const theme = useMantineColorScheme();
