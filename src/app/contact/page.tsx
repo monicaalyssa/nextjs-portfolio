@@ -43,6 +43,7 @@ export default function Contact() {
   }
   return (
     <>
+    <title>Contact Me | Monica Williams</title>
       <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>
         Contact
       </Title>

@@ -30,6 +30,7 @@ export default function Projects() {
   }
   return (
     <>
+      <title>Projects | Monica Williams</title>
       <Title c={theme.colorScheme === "dark" ? "white" : "black"} order={2}>
         Projects
       </Title>
