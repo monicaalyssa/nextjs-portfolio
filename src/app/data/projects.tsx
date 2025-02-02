@@ -3,7 +3,7 @@ export const projects = [
       name: "PopcornPal",
       favicon: "/popcornpal-logo.png",
       description:
-        "PopcornPal is a full-stack web application that showcases detailed information about movies and lets users create accounts and favorite films.",
+        "Full-stack web application that allows users to browse movies, view film details, and save their favorites by creating an account.",
       description2: "Explore a diverse collection of movies, learn about movie plots and directors, and register to manage your favorite movies.",
       img: "/popcornpal.png",
       sourceCode: "https://github.com/monicaalyssa/popcornpal-client",
@@ -14,8 +14,8 @@ export const projects = [
     {
       name: "Pokédex",
       favicon: "https://monicaalyssa.github.io/pokedex/images/pokemon-icon.svg",
-      description: "A JavaScript web application that fetches data from a Pokémon API to display a list of Pokémon with images and details.",
-      description2: "Browse and search through Pokémon by images and get detailed species information.",
+      description: "JavaScript web application that utilizes a Pokémon API to retrieve data and display a list of Pokémon, along with images and details.",
+      description2: "Browse and search through images of Pokémon to access detailed species information.",
       img: "/pokedex.png",
       sourceCode: "https://github.com/monicaalyssa/pokedex",
       liveSite: "https://monicaalyssa.github.io/pokedex/",
@@ -25,7 +25,7 @@ export const projects = [
     {
       name: "Local Mortgage Lender",
       description:
-        "A local mortgage lender offering a variety of loan options and attracting potential clients and partners with interactive tools, calculators, and valuable resources. Integrated with Sanity CMS, allowing the marketing team to efficiently manage and publish blogs.",
+        "Lender website offering a wide range of loan options, interactive tools, calculators, and valuable resources. Integrated with Sanity CMS, allowing the marketing team to efficiently manage and publish blogs.",
       description2: "Get reliable information on mortgage loan options, use built-in calculators to estimate payments, and find essential resources to help you make informed financial decisions.",
       img: "/mortgage-lender.png",
       techStack: ["React", "TypeScript", "Sanity", "Mantine"],
@@ -34,7 +34,7 @@ export const projects = [
     {
         name: "Mingo: Messaging & Chat",
         favicon: "/chat.png",
-        description: "A React Native application that lets users chat with friends, share images, and send their location on iOS and Android.",
+        description: "React Native application available on both iOS and Android, allowing users to chat with friends, share images, and send their location.",
         description2: "Chat with your friends on iOS or Android devices, and easily share messages, photos, and your location.",
         img: "/mingo.png",
         sourceCode: "https://github.com/monicaalyssa/mingo",
@@ -45,7 +45,7 @@ export const projects = [
     {
         name: "Meet",
         description: "Meet is a Progressive Web App (PWA) with offline functionality that allows users to search for upcoming events near their city. It includes interactive charts to visualize key event data.",
-        description2: "Find events near your city and view event insights through interactive charts.",
+        description2: "Discover events in your city and gain valuable insights through interactive charts.",
         img: "/meet.png",
         sourceCode: "https://github.com/monicaalyssa/meet",
         liveSite: "",
