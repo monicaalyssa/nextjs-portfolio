@@ -117,6 +117,19 @@ export default function Projects() {
                     Live Site
                   </Button>
                 ) : null}
+                {project.caseStudy ? (
+                  <Button
+                    c="var(--mantine-text-color)"
+                    variant="default"
+                    size="compact-xs"
+                    component="a"
+                    target="_blank"
+                    href={project.caseStudy}
+                    classNames={{ section: "rightWWW" }}
+                  >
+                    Case Study
+                  </Button>
+                ) : null}
               </Flex>
             </Flex>
             </Flex>

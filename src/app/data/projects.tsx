@@ -10,6 +10,7 @@ export const projects = [
       liveSite: "https://popcornpal.netlify.app/",
       techStack: ["React", "Node.js", "Express", "MongoDB"],
       techStack2: ["React", "Node.js", , "Express", "MongoDB", "SCSS"],
+      caseStudy: "/PopcornPal Case Study.pdf",
     },
     {
       name: "Pokédex",
@@ -21,6 +22,7 @@ export const projects = [
       liveSite: "https://monicaalyssa.github.io/pokedex/",
       techStack: ["JavaScript", "RESTful API", "Bootstrap"],
       techStack2: ["JavaScript", "PokeAPI", "Bootstrap"],
+      caseStudy: "/Pokédex Case Study.pdf",
     },
     {
       name: "Local Mortgage Lender",
@@ -51,6 +53,7 @@ export const projects = [
         liveSite: "",
         techStack: ["React", "AWS", "OAuth (Open Authorization)"],
         techStack2: ["React", "Jest", "RESTful API", "AWS Lambda", "OAuth"],
+        caseStudy: "/Meet Case Study.pdf",
       },
     //   {
     //     name: "Scripture Support",
