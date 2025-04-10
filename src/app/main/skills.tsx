@@ -36,15 +36,15 @@ export default function Skills() {
       alt: "Postman"
     },
     {
-      src: "/Jest.svg",
+      src: "/jest.svg",
       alt: "Jest"
     },
     {
-      src: "/Figma.svg",
+      src: "/figma.svg",
       alt: "Figma"
     },
     {
-      src: "/Trello.svg",
+      src: "/trello.svg",
       alt: "Trello"
     }
   ];
